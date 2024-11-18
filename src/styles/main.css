@@ -171,3 +171,16 @@ header .column span{
         #000 100%
     );
 }
+
+/* Rotating and resizing for it to fit a mobile screen */
+@media (max-width: 700px) {
+    body{
+        transform: rotate(90deg);
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .piano_keys .key span{
+        display: none;
+    }
+}
